@@ -41,10 +41,10 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "modulefederation_react",
+      name: "home",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {"./Layout": "./src/Layout.jsx"},
       shared: {
         ...deps,
         react: {
