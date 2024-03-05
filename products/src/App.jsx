@@ -14,12 +14,12 @@ const App = () => {
   return (
     <>
       <Suspense fallback={()=> <>Loading....</>}>
-      <Layout>
-      <div className="" style={bodyStyles}>
-        <div>Products App</div>
-        <div>Language: JavaScript</div>
-      </div>
-    </Layout>
+        <Layout>
+          <div style={bodyStyles}>
+            <div>Products App</div>
+            <div>Language: JavaScript</div>
+          </div>
+        </Layout>
       </Suspense>
     </>
   );
